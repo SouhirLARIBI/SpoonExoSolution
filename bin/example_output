@@ -1,0 +1,281 @@
+compiling sources: [sr_ copy/main/java/fr/inria/Main.java, sr_ copy/main/java/fr/inria/StatementProcessor.java]
+compiled in 376 ms
+compiling templates: []
+compiled in 2 ms
+fr.inria.StatementProcessor
+property file not found for processor 'fr.inria.StatementProcessor'
+Statement: 1
+{
+}
+-----------------------------------
+Statement: 2
+super()
+-----------------------------------
+Statement: 3
+{
+    fr.inria.Main main = new fr.inria.Main();
+    main.runSpoon(args[0]);
+}
+variable access 1: main
+variable access 1: main
+variable access 2: args
+-----------------------------------
+Statement: 4
+fr.inria.Main main = new fr.inria.Main()
+-----------------------------------
+Statement: 5
+new fr.inria.Main()
+-----------------------------------
+Statement: 6
+main.runSpoon(args[0])
+variable access 1: main
+variable access 1: main
+variable access 2: args
+-----------------------------------
+Statement: 7
+{
+    spoon.support.StandardEnvironment env = new spoon.support.StandardEnvironment();
+    env.setComplianceLevel(6);
+    env.setVerbose(true);
+    env.setDebug(true);
+    spoon.support.DefaultCoreFactory f = new spoon.support.DefaultCoreFactory();
+    spoon.reflect.Factory factory = new spoon.reflect.Factory(f , env);
+    spoon.support.builder.SpoonBuildingManager builder = new spoon.support.builder.SpoonBuildingManager(factory);
+    for (java.lang.String dir : sourceDirectory.split(java.lang.System.getProperty("path.separator")))
+        try {
+            builder.addInputSource(new java.io.File(dir));
+            builder.build();
+        } catch (java.lang.Exception e) {
+            e.printStackTrace();
+        }
+    spoon.processing.ProcessingManager pm = new spoon.support.QueueProcessingManager(factory);
+    fr.inria.StatementProcessor processor = new fr.inria.StatementProcessor();
+    pm.addProcessor(processor);
+    pm.process();
+}
+variable access 1: env
+variable access 1: env
+variable access 2: env
+variable access 2: env
+variable access 3: env
+variable access 3: env
+variable access 4: f
+variable access 4: f
+variable access 5: env
+variable access 5: env
+variable access 6: factory
+variable access 6: factory
+variable access 7: sourceDirectory
+variable access 8: builder
+variable access 8: builder
+variable access 9: dir
+variable access 9: dir
+variable access 10: builder
+variable access 10: builder
+variable access 11: e
+variable access 11: e
+variable access 12: factory
+variable access 12: factory
+variable access 13: pm
+variable access 13: pm
+variable access 14: processor
+variable access 14: processor
+variable access 15: pm
+variable access 15: pm
+-----------------------------------
+Statement: 8
+spoon.support.StandardEnvironment env = new spoon.support.StandardEnvironment()
+-----------------------------------
+Statement: 9
+new spoon.support.StandardEnvironment()
+-----------------------------------
+Statement: 10
+env.setComplianceLevel(6)
+variable access 1: env
+variable access 1: env
+-----------------------------------
+Statement: 11
+env.setVerbose(true)
+variable access 1: env
+variable access 1: env
+-----------------------------------
+Statement: 12
+env.setDebug(true)
+variable access 1: env
+variable access 1: env
+-----------------------------------
+Statement: 13
+spoon.support.DefaultCoreFactory f = new spoon.support.DefaultCoreFactory()
+-----------------------------------
+Statement: 14
+new spoon.support.DefaultCoreFactory()
+-----------------------------------
+Statement: 15
+spoon.reflect.Factory factory = new spoon.reflect.Factory(f , env)
+variable access 1: f
+variable access 1: f
+variable access 2: env
+variable access 2: env
+-----------------------------------
+Statement: 16
+new spoon.reflect.Factory(f , env)
+variable access 1: f
+variable access 1: f
+variable access 2: env
+variable access 2: env
+-----------------------------------
+Statement: 17
+spoon.support.builder.SpoonBuildingManager builder = new spoon.support.builder.SpoonBuildingManager(factory)
+variable access 1: factory
+variable access 1: factory
+-----------------------------------
+Statement: 18
+new spoon.support.builder.SpoonBuildingManager(factory)
+variable access 1: factory
+variable access 1: factory
+-----------------------------------
+Statement: 19
+for (java.lang.String dir : sourceDirectory.split(java.lang.System.getProperty("path.separator")))
+    try {
+        builder.addInputSource(new java.io.File(dir));
+        builder.build();
+    } catch (java.lang.Exception e) {
+        e.printStackTrace();
+    }
+variable access 1: sourceDirectory
+variable access 2: builder
+variable access 2: builder
+variable access 3: dir
+variable access 3: dir
+variable access 4: builder
+variable access 4: builder
+variable access 5: e
+variable access 5: e
+-----------------------------------
+Statement: 20
+java.lang.String dir
+-----------------------------------
+Statement: 21
+sourceDirectory.split(java.lang.System.getProperty("path.separator"))
+variable access 1: sourceDirectory
+-----------------------------------
+Statement: 22
+java.lang.System.getProperty("path.separator")
+-----------------------------------
+Statement: 23
+try {
+    builder.addInputSource(new java.io.File(dir));
+    builder.build();
+} catch (java.lang.Exception e) {
+    e.printStackTrace();
+}
+variable access 1: builder
+variable access 1: builder
+variable access 2: dir
+variable access 2: dir
+variable access 3: builder
+variable access 3: builder
+variable access 4: e
+variable access 4: e
+-----------------------------------
+Statement: 24
+{
+    builder.addInputSource(new java.io.File(dir));
+    builder.build();
+}
+variable access 1: builder
+variable access 1: builder
+variable access 2: dir
+variable access 2: dir
+variable access 3: builder
+variable access 3: builder
+-----------------------------------
+Statement: 25
+builder.addInputSource(new java.io.File(dir))
+variable access 1: builder
+variable access 1: builder
+variable access 2: dir
+variable access 2: dir
+-----------------------------------
+Statement: 26
+new java.io.File(dir)
+variable access 1: dir
+variable access 1: dir
+-----------------------------------
+Statement: 27
+builder.build()
+variable access 1: builder
+variable access 1: builder
+-----------------------------------
+Statement: 28
+java.lang.Exception e
+-----------------------------------
+Statement: 29
+{
+    e.printStackTrace();
+}
+variable access 1: e
+variable access 1: e
+-----------------------------------
+Statement: 30
+e.printStackTrace()
+variable access 1: e
+variable access 1: e
+-----------------------------------
+Statement: 31
+spoon.processing.ProcessingManager pm = new spoon.support.QueueProcessingManager(factory)
+variable access 1: factory
+variable access 1: factory
+-----------------------------------
+Statement: 32
+new spoon.support.QueueProcessingManager(factory)
+variable access 1: factory
+variable access 1: factory
+-----------------------------------
+Statement: 33
+fr.inria.StatementProcessor processor = new fr.inria.StatementProcessor()
+-----------------------------------
+Statement: 34
+new fr.inria.StatementProcessor()
+-----------------------------------
+Statement: 35
+pm.addProcessor(processor)
+variable access 1: pm
+variable access 1: pm
+variable access 2: processor
+variable access 2: processor
+-----------------------------------
+Statement: 36
+pm.process()
+variable access 1: pm
+variable access 1: pm
+-----------------------------------
+Statement: 37
+{
+}
+-----------------------------------
+Statement: 38
+super()
+-----------------------------------
+Statement: 39
+{
+    (i)++;
+    java.lang.System.out.println(("Statement " + (i)));
+    java.lang.System.out.println(element);
+    java.lang.System.out.println("-----------------------------------");
+}
+variable access 1: element
+-----------------------------------
+Statement: 40
+(i)++
+-----------------------------------
+Statement: 41
+java.lang.System.out.println(("Statement " + (i)))
+-----------------------------------
+Statement: 42
+java.lang.System.out.println(element)
+variable access 1: element
+-----------------------------------
+Statement: 43
+java.lang.System.out.println("-----------------------------------")
+-----------------------------------
